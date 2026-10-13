@@ -1,0 +1,9 @@
+
+name: task-b-zmq
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.11
+  - pyzmq=27.2.0

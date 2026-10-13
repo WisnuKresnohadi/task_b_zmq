@@ -1,0 +1,33 @@
+
+services:
+  collector:
+    build: .
+    command: ["python", "collector.py"]
+    environment:
+      DISTRIBUTOR_HOST: distributor
+      WORKER1_HOST: worker1
+      WORKER2_HOST: worker2
+    depends_on:
+      - distributor
+      - worker1
+      - worker2
+
+
+  worker1:
+    build: .
+    command: ["python", "worker.py", "Worker 1", "9933"]
+    environment:
+      DISTRIBUTOR_HOST: distributor
+
+  worker2:
+    build: .
+    command: ["python", "worker.py", "Worker 2", "9932"]
+    environment:
+      DISTRIBUTOR_HOST: distributor
+
+  distributor:
+    build: .
+    command: ["python", "distributor.py"]
+    depends_on:
+      - worker1
+      - worker2
