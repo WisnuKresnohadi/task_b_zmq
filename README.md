@@ -69,31 +69,8 @@ The numbers are random and may differ on another run. The key validation is that
 
 ## 7. Screenshot evidence
 
-**Replace the placeholders below with screenshots from your own Docker Desktop or terminal run before submitting.** Do not submit this report with the placeholders still present.
 
-### Figure 1 — Distributor sends tasks
-
-*Insert a screenshot showing the distributor's generated `x` and `y`, both sent tasks, and completion acknowledgments from Worker 1 and Worker 2.*
-
-<!-- Suggested image after taking the screenshot: ![Distributor logs](screenshots/01-distributor.png) -->
-
-### Figure 2 — Worker 1 receives a task
-
-*Insert a screenshot showing Worker 1 receiving its task, calculating the sum, sending the result, and sending its completion acknowledgment.*
-
-<!-- Suggested image after taking the screenshot: ![Worker 1 logs](screenshots/02-worker1.png) -->
-
-### Figure 3 — Worker 2 receives a task
-
-*Insert a screenshot showing Worker 2 receiving its task, calculating the sum, sending the result, and sending its completion acknowledgment.*
-
-<!-- Suggested image after taking the screenshot: ![Worker 2 logs](screenshots/03-worker2.png) -->
-
-### Figure 4 — Collector receives results
-
-*Insert a screenshot showing the collector displaying `Result 1/2`, `Result 2/2`, and `All results received.`*
-
-<!-- Suggested image after taking the screenshot: ![Collector logs](screenshots/04-collector.png) -->
+![evidence](docker.png)
 
 ## 8. How to run the application
 
